@@ -1,7 +1,6 @@
 import AlarmClock from '../../assets/alarm-icon.svg'
 import './AlarmView.css'
 import { useNavigate } from 'react-router-dom'
-import {motion} from 'framer-motion'
 import ghostMusic from '../../assets/GhostMusic.mp3'
 import { useEffect, useRef } from 'react'
 
@@ -29,20 +28,11 @@ function AlarmView() {
         loop
       />
     <div className='alarm-background'>
-        <motion.img
+        <img
             className='alarm-icon'
             src={AlarmClock}
-            alt="Alam Clock"
-            animate={{ rotate: [0, -10, 10, -10, 10, 0],  
-            }}
-            transition={{
-              duration: 0.5,    
-              repeat: Infinity,
-              ease: 'easeInOut' 
-            }}
-                
-            
-        />
+            alt="Alam Clock"/>
+
         <h2 className='TimesUp-heading'>Times up!</h2>
     </div>
     <button
