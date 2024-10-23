@@ -17,7 +17,7 @@ function TimerMenu() {
       x: 0,      
       transition: {
         delay: linkIndex * 0.3, //fördröjning baserat på index för att animera en i taget
-        duration: 0.5,
+        duration: 0.3,
       },
     }),
   };

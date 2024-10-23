@@ -30,7 +30,7 @@ function TextTimer() {
   const formatTimeAsText = (minutes, seconds) => {
     const minuteText = minutes === 1 ? 'en minut' : `${numberToWords(minutes)} minuter`;
     const secondText = seconds === 1 ? 'en sekund' : `${numberToWords(seconds)} sekunder`;
-    return `${minuteText} och ${secondText} kvar`;
+    return `${minuteText} och ${secondText} kvar`.toUpperCase();
   }
   
   useEffect(() => {

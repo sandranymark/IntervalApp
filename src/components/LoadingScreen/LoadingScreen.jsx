@@ -23,11 +23,12 @@ const handleClick = () => {
         onClick={handleClick}
         initial={{
           y: -1000, // Logotypen börjar högt uppifrån (utanför skärmen)
-          scale: 0.5, // Börjar liten
+          scale: 0.5, 
+
         }}
         animate={{
           y: 0, // Logotypen glider in till mitten av skärmen
-          scale: 1, // Blir lite större när den landar
+          scale: 1, 
           rotate: [0, 20, -20, 10, -10, 0], // Skapar en liten skakig effekt vid "smash"
         }}
         transition={{
@@ -37,7 +38,7 @@ const handleClick = () => {
           duration: 3, // tid för långsammare animation
         }}
         whileTap={{
-          scale: 2, // vid klicket scalar jag upp logotypen
+          scale: 2,
           
         }}
       />
