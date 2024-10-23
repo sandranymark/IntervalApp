@@ -1,0 +1,202 @@
+.AnalogTimer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: PT Sans;
+}
+
+.abort-btn {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.7px;
+    letter-spacing: 2px;
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    opacity: 60%;
+    margin: 0;
+    position: absolute;
+    bottom: 48px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.AnalogTimer--wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+.interval-heading {
+    font-family: PT Sans;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.clockis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+}
+
+.AnalogClock {
+    width: 300px;
+    height: 300px;
+}
+
+.AnalogClock--dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px black;
+}
+
+.AnalogClock--houers {
+    position: absolute;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.twelve {
+    top: 10px;
+    left: 49, 5%;
+    color: red;
+}
+
+.eleven {
+    top: 10%;
+    left: 33%;
+}
+
+.one {
+    top: 10%;
+    right: 33%;
+}
+
+.two {
+    top: 24%;
+    right: 22%;
+
+}
+
+.three {
+    top: 45%;
+    right: 65px;
+    color: red;
+
+}
+
+.four {
+    top: 66%;
+    right: 80px;
+
+}
+
+.five {
+    top: 81%;
+    right: 122px;
+}
+
+.six {
+    bottom: 10px;
+    left: 49, 5%;
+    color: red;
+}
+
+.seven {
+    top: 80%;
+    left: 125px;
+}
+
+.eight {
+    top: 66%;
+    left: 82px;
+
+}
+
+.nine {
+    top: 45%;
+    left: 66px;
+    color: red;
+}
+
+.ten {
+    top: 24%;
+    left: 81px;
+
+}
+
+.hour-hand {
+    position: absolute;
+    z-index: 5;
+    width: 4px;
+    height: 65px;
+    background-color: #222222;
+    top: 79px;
+    left: 50%;
+    transform-origin: 50% 72px;
+    margin-left: -2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.minute-hand {
+    position: absolute;
+    z-index: 6;
+    width: 4px;
+    height: 100px;
+    background-color: #666;
+    top: 46px;
+    left: 50%;
+    transform-origin: 50% 105px;
+    margin-left: -2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.second-hand {
+    position: absolute;
+    z-index: 7;
+    width: 2px;
+    height: 120px;
+    background-color: red;
+    top: 26px;
+    left: 50%;
+    transform-origin: 50% 125px;
+    margin-left: -1px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}

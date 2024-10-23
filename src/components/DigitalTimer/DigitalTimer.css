@@ -1,0 +1,62 @@
+.DigitalTimer {
+    font-family: PT Sans;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.abort-btn {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.7px;
+    letter-spacing: 2px;
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    opacity: 60%;
+    position: absolute;
+    bottom: 48px;
+}
+
+.Digital-heading {
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    color: #222222;
+    letter-spacing: 2px;
+}
+
+.DigitalTimer--wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.interval-heading {
+    font-family: PT Sans;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.time-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
