@@ -1,23 +1,56 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './TimerMenu.css';
 import Navigation from '../Navigation/Navigation';
+import { motion } from 'framer-motion';
 
 function TimerMenu() {
-  return (
-    <div className='TimerMenu'>
-      <Navigation />
-      <div className='menu-wrapper'>
-        <nav className='nav'>
-          <Link className='nav-link' to='/analog-timer'>ANALOG TIMER</Link>
-          <Link className='nav-link' to='/digital-timer'>DIGITAL TIMER</Link>
-          <Link className='nav-link' to='/text-timer'>TEXT TIMER</Link>
-          <Link className='nav-link' to='/set-timer'>FUCK THIS</Link>
-        </nav>
-      </div>
+
+  const linkVariants = {
+    hidden: 
+    { 
+      opacity: 0, 
+      x: -100    
+    }, 
+
+    visible: (linkIndex) => ({
+      opacity: 1, 
+      x: 0,      
+      transition: {
+        delay: linkIndex * 0.3, //fördröjning baserat på index för att animera en i taget
+        duration: 0.5,
+      },
+    }),
+  };
+
+const navLinks = [
+  { path: '/analog-timer', label: 'ANALOG TIMER' },
+  { path: '/digital-timer', label: 'DIGITAL TIMER' },
+  { path: '/text-timer', label: 'TEXT TIMER' },
+  // { path: '/set-timer', label: 'FUCK THIS' },
+];
+
+
+return (
+  <div className='TimerMenu'>
+    <Navigation />
+    <div className='menu-wrapper'>
+      <nav className='nav'>
+        {navLinks.map((link, linkIndex) => (
+          <motion.div
+            className='nav-link'
+            key={link.path}
+            custom={linkIndex}
+            initial='hidden'
+            animate='visible'
+            variants={linkVariants}
+          >
+            <Link to={link.path}>{link.label}</Link>
+          </motion.div>
+        ))}
+      </nav>
     </div>
-  );
+  </div>
+);
 }
-
-
 
 export default TimerMenu;

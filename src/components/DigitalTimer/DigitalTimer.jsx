@@ -28,7 +28,7 @@ function DigitalTimer() {
             <div className='DigitalTimer--wrapper'>
 
                 <div className='time-container'>
-                    <h1>{displayTime}</h1>
+                    <h1 className='Digital-heading'>{displayTime}</h1>
                     <button
                     className='abort-btn'
                     onClick={() => handleAbort()}

@@ -10,7 +10,7 @@ import {motion} from 'framer-motion'
 
 function AnalogTimer() {
     const navigate = useNavigate()
-    const { seconds, minutes, resetTimer } = useTimer(); // Access the current timer value from context
+    const { seconds, minutes, resetTimer } = useTimer(); 
 
     useEffect(() => {
     }, []);

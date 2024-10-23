@@ -4,6 +4,8 @@ import TimerMenu from '../TimerMenu/TimerMenu'
 import { useState } from 'react'
 import { IoIosCloseCircle } from "react-icons/io";
 
+
+
 function Navigation() {
 const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,6 +18,9 @@ const handleIconClick = () => {
 const handleCloseClick = () => {
   setMenuOpen(false);
 };
+
+
+
 
   return (
     <div className='Navigation'>
