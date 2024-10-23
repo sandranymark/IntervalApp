@@ -26,6 +26,7 @@ function AlarmView() {
         src={ghostMusic}
         autoPlay
         hidden
+        loop
       />
     <div className='alarm-background'>
         <motion.img
